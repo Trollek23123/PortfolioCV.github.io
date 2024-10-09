@@ -45,7 +45,13 @@ h1 {
   .image {
     position:absolute;
     width:100%;
-    
+    display:flex;
+    justify-content: space-between;
+    flex-direction:row;
+  }
+  img {
+    width:50%;
+    height:auto;
   }
   .kontakt{
     color:white;
@@ -54,11 +60,16 @@ h1 {
     display: block;
     text-align: center;
 }
-.zdjecie {
-    position:absolute;
-    width:40%;
-}
+
 h3 {
     color:red;
     
 }
+@media screen and (max-width: 768px) {
+    .image{
+    flex-direction: column;
+    }
+    img{
+    width:100%;
+    }
+    }
